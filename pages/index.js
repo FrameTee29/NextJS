@@ -1,7 +1,12 @@
-const HomePage = () =>{
+import MainLayout from '../layouts/MainLayout'
+
+const HomePage = () => {
 
     return (
-        <div>Home Page</div>
+       
+        <MainLayout>
+            Hello Home Page
+        </MainLayout>
     )
 }
 
