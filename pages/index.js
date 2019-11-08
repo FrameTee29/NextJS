@@ -1,11 +1,8 @@
 import MainLayout from '../layouts/MainLayout'
 import React, { useState } from 'react'
 
-
 const HomePage = () => {
 
-    const [behind] = useState('../static/images/images4.jpg')
-    const [glasses] = useState('../static/images/magnifying.jpg')
 
     return (
         <div>
@@ -13,12 +10,12 @@ const HomePage = () => {
             </MainLayout>
             <div className="moveback">
                 <div className="layoutBackground">
-                    <img className="behindground" src={behind}></img>
+                    <img className="behindground" src='../static/images/images4.jpg'></img>
                 </div>
                 <div className="SearchRow">
                     
                         <div className="borderbox">
-                            <img className="magnifyingstyle" src={glasses}></img>
+                            <img className="magnifyingstyle" src='../static/images/magnifying.jpg'></img>
                             <input className="input-Search" type="text" placeholder="Find Something" ></input>
                         </div>
                         <button className="buttonsearch">Search</button>
@@ -52,6 +49,7 @@ const HomePage = () => {
             <style jsx>{`
             h5{
                 margin:0px;
+                color:gray;
             }
             .Products{
                 font-size:30px;
